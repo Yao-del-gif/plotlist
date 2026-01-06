@@ -41,10 +41,10 @@
     <div class="filter-group">
         <h4>Price Range</h4>
         <ul>
-            <li><button>$50 – $100</button></li>
-            <li><button>$100 – $150</button></li>
-            <li><button>$150 – $200</button></li>
-            <li><button>$250 – $300</button></li>
+            <li><button data-price="50">$200 - $500</button></li>
+            <li><button data-price="300">$500 - $850</button></li>
+            <li><button data-price="900">$900 - $1300</button></li>
+            <li><button data-price="100+">$1500+</button></li>
         </ul>
     </div>
 
@@ -53,36 +53,17 @@
 
     <div class="checkbox-dropdown">
         <label class="parent-check">
-            <input type="checkbox" id="yangon-region" checked>
+            <input type="checkbox" id="yangon-region" class="filter-region" checked>
             Yangon
         </label>
-
-        <div class="checkbox-children">
-            <label>
-                <input type="checkbox" name="yangon-area">
-                North Yangon
-            </label>
-            <label>
-                <input type="checkbox" name="yangon-area">
-                South Yangon
-            </label>
-            <label>
-                <input type="checkbox" name="yangon-area">
-                East Yangon
-            </label>
-            <label>
-                <input type="checkbox" name="yangon-area">
-                West Yangon
-            </label>
-        </div>
     </div>
 </div>
 
-<div class="filter-group">
+<div class="filter-group township-group">
     <h4>Township</h4>
 
     <label class="single-check">
-        <input type="checkbox" id="myit-township" checked>
+        <input type="radio" name="township" id="mayangone-township" checked>
         Mayangone
     </label>
 </div>
@@ -90,9 +71,9 @@
     <div class="filter-group">
         <h4>Type</h4>
         <ul class="type-list">
-            <li><label><input type="checkbox"> Apartment</label></li>
-            <li><label><input type="checkbox"> Mini Condo</label></li>
-            <li><label><input type="checkbox"> Condo</label></li>
+            <li><label><input type="checkbox" class="filter-type" value="apartment"> Apartment</label></li>
+            <li><label><input type="checkbox" class="filter-type" value="house"> Houses</label></li>
+            <li><label><input type="checkbox" class="filter-type" value="condo"> Condo</label></li>
         </ul>
     </div>
 
@@ -106,56 +87,110 @@
     <h2>Properties for Sale in Yangon</h2>
 </section>
 
-    <article class="listing-row">
+    <article class="listing-row" data-type="apartment" data-price="300" data-region="yangon" data-township="mayangone">
         <div class="listing-image">
-            <img src="https://www.zillowstatic.com/bedrock/app/uploads/sites/26/nyc-apartments-under-2k-park-slope-22b7bf.jpg" alt="Apartment">
-            <div class="img-overlay"><a href="">Learn More</a></div>
+            <img src="images/listing/spacious/bed1.png" alt="Apartment">
+            <div class="img-overlay"><a href="listings/spacious.html">View Details</a></div>
         </div>
 
         <div class="listing-details">
-            <h3>Sunshine Paradise Apartment</h3>
+            <h3>Spacious 3-Bedroom Apartment</h3>
             <p class="agent">by: Real Estate Agent</p>
-            <p class="price">$600 / month included tax</p>
-            <p class="size">860 sq ft</p>
+            <p class="price">$850 / month included tax</p>
+            <p class="size">1650 sq ft</p>
 
             <ul class="features">
-                <li>2 Bedrooms</li>
-                <li>3 Bathrooms</li>
+                <li>3 Bedrooms</li>
+                <li>2 Bathrooms</li>
             </ul>
 
         <div class="listing-actions">
             <a href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">
                 Contact Now
             </a>
-            <a href="listing-details.html" class="btn-view">View Details</a>
+            <a href="listings/spacious.html" class="btn-view">View Details</a>
         </div>
 
         </div>
     </article>
 
-    <article class="listing-row">
+    <article class="listing-row" data-type="condo" data-price="50" data-region="yangon" data-township="mayangone">
         <div class="listing-image">
-            <img src="https://sgrenting.com/storage/properties/879/cheap-apartment-for-rent-in-phu-my-hung-district-7-hung-vuong-2-building-0.jpeg" alt="Apartment">
-            <div class="img-overlay"><a href="">Learn More</a></div>
+            <img src="images/listing/apartment/room1.png" alt="Apartment">
+            <div class="img-overlay"><a href="listings/apartment.html">View Details</a></div>
         </div>
 
         <div class="listing-details">
-            <h3>Best One in This Category</h3>
+            <h3>1 Bed Condo</h3>
             <p class="agent">by: Real Estate Agent</p>
-
-            <p class="price">$800 / month included tax</p>
-            <p class="size">860 sq ft</p>
+            <p class="price">$400 / month included tax</p>
+            <p class="size">510 sq ft</p>
 
             <ul class="features">
-                <li>2 Bedrooms</li>
-                <li>3 Bathrooms</li>
+                <li>1 Bedrooms</li>
+                <li>1 Bathrooms</li>
             </ul>
 
         <div class="listing-actions">
             <a href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">
                 Contact Now
             </a>
-            <a href="listing-details.html" class="btn-view">View Details</a>
+            <a href="listings/apartment.html" class="btn-view">View Details</a>
+        </div>
+
+        </div>
+    </article>
+
+    <article class="listing-row" data-type="condo" data-price="100+" data-region="yangon" data-township="mayangone">
+        <div class="listing-image">
+            <img src="images/listing/diamond/living.png" alt="Apartment">
+            <div class="img-overlay"><a href="listings/diamondhill.html">View Details</a></div>
+        </div>
+
+        <div class="listing-details">
+            <h3>Diamond Hill Condo</h3>
+            <p class="agent">by: Real Estate Agent</p>
+
+            <p class="price">$1500 / month tax included</p>
+            <p class="size">2100 sq ft</p>
+
+            <ul class="features">
+                <li>4 Bedrooms</li>
+                <li>4 Bathrooms</li>
+            </ul>
+
+        <div class="listing-actions">
+            <a href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">
+                Contact Now
+            </a>
+            <a href="listings/diamondhill.html" class="btn-view">View Details</a>
+        </div>
+
+        </div>
+    </article>
+
+    <article class="listing-row" data-type="house" data-price="900" data-region="yangon" data-township="mayangone">
+        <div class="listing-image">
+            <img src="images/listing/elegant/outside.png" alt="Apartment">
+            <div class="img-overlay"><a href="listings/elegant.html">View Details</a></div>
+        </div>
+
+        <div class="listing-details">
+            <h3>Elegent 3 Bed House</h3>
+            <p class="agent">by: Real Estate Agent</p>
+            <p class="price">$1000 / month included tax</p>
+            <p class="size">1250 sq ft</p>
+
+            <ul class="features">
+                <li>3 Bedrooms</li>
+                <li>4 Bathrooms</li>
+            </ul>
+
+        <div class="listing-actions">
+            <a href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">
+                Contact Now
+            </a>
+            <a href="listings/elegant.html" class="btn-view">View Details</a>
         </div>
 
         </div>
@@ -212,6 +247,6 @@
 </div>
 
 <script src="contact.js"></script>
-
+<script src="listing.js"></script>
 </body>
 </html>

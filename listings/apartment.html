@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1 Bed Condo | Plotlist</title>
+
+    <link rel="stylesheet" href="../listing.css">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../contactbtn.css">
+    <link rel="stylesheet" href="diamond.css">
+
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-left">
+        <span class="logo-icon">📄</span>
+        <span class="logo-text">Plotlist</span>
+    </div>
+
+    <nav class="nav-center">
+        <a href="../index.html">Home</a>
+        <a href="../policy.html">Policy</a>
+        <a href="../listing.html">Listing</a>
+        <a href="../contact.html">Contact Us</a>
+    </nav>
+
+    <div class="nav-right">
+        <button class="add-btn" href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">+ Add Your Listing</button>
+    </div>
+</header>
+
+<section class="details-container">
+
+    <div class="gallery">
+        <div class="main-image">
+            <button class="arrow left" onclick="prevImage()">‹</button>
+            <img id="mainImg" src="../images/listing/apartment/bed1.png">
+            <button class="arrow right" onclick="nextImage()">›</button>
+        </div>
+
+<div class="thumbs-wrapper">
+    <button class="thumb-arrow left" onclick="scrollThumbs(-1)">‹</button>
+
+    <div class="thumbs" id="thumbsContainer">
+        <img src="../images/listing/apartment/bed1.png" class="active" onclick="setImage(0)">
+        <img src="../images/listing/apartment/kitchen.png" onclick="setImage(1)">
+        <img src="../images/listing/apartment/room1.png" onclick="setImage(2)">
+        <img src="../images/listing/apartment/room2.png" onclick="setImage(3)">
+    </div>
+
+    <button class="thumb-arrow right" onclick="scrollThumbs(1)">›</button>
+</div>
+
+    </div>
+
+    <div class="details-info">
+        <h1>1 Bed Condo</h1>
+        <p class="agent">Listed by Plotlist</p>
+
+        <div class="price">$400 / month (tax included)</div>
+
+        <div class="details-meta">
+            <span> 510 sq ft</span>
+            <span>🛏 1 Bedrooms</span>
+            <span>🛁 1 Bathrooms</span>
+        </div>
+
+        <p class="details-desc"> 
+            
+           This is a 1 Bed Condo in Thanlyin. The asking price is $400 USD per month, the square feet is 510.
+
+            Inside the property, there is one master bedroom with ensuites. The property will come furnished with all essentials for daily living. This includes items such as a TV, sofa set, coffee table, dining table, chairs, beds, mattresses, washing machine & a fridge freezer.
+
+            This condominium comes with a garden view, access to the swimming pool and gym, and one-car parking. This condominium will also come with 24-hour electricity and security guards.
+
+        </p>
+
+        <ul class="details-features">
+            <li>✔ Backup Generator</li>
+            <li>✔ 24/7 security</li>
+            <li>✔ Car parking available</li>
+            <li>✔ Swimming Pool</li>
+            <li>✔ Elevator</li>
+            <li>✔ Fitness Center</li>
+        </ul>
+    </div>
+
+        <div class="listing-actions" style="position: static; margin-top: 30px;">
+        <a href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">Contact Now</a>
+        <a href="../listing.html" class="btn-view">View More Listings</a>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+
+        <div class="footer-left">
+            <h3 class="footer-title">Plotlist</h3>
+            <p class="footer-desc">
+                Plotlist is a fictional platform for discovering properties,
+                listings, and modern living spaces.
+            </p>
+        </div>
+
+    <div class="footer-right">
+        <h4>Contact Us</h4>
+            <ul>
+                <li>+95 9420188199</li>
+                <li>+95 9799993239</li>
+                <li>+95 95501107</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Plotlist. All rights reserved.
+    </div>
+</footer>
+
+
+<div class="contact-modal" id="contactModal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeContactModal()">×</button>
+
+        <h3 class="modal-title">
+            Phone No. To Contact <strong>Plotlist Agency</strong>
+        </h3>
+
+        <div class="phone-list">
+            <p>📞 09420188199</p>
+            <p>📞 09799993239</p>
+            <p>📞 095501107</p>
+        </div>
+
+        <div class="modal-info">
+            Please mention that you found this advertisement on
+            <strong>Plotlist</strong>.
+        </div>
+    </div>
+</div>
+
+
+
+<script src="apartment.js"></script>
+<script src="../contact.js"></script>
+</body>
+</html>

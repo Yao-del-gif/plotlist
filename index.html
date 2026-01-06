@@ -36,17 +36,18 @@
         <h1>Find Nearby Places & Things</h1>
 
         <div class="search-bar">
-            <select>
-                <option>$50-$100</option>
-                <option>$100-$150</option>
-                <option>$150-$200</option>
-                <option>$250-$300</option>
+            <select id="priceSelect">
+                <option value="">Any Price</option>
+                <option value="50">$200-$500</option>
+                <option value="300">$500-$850</option>
+                <option value="900">$900-$1300</option>
+                <option value="100+">$1500+</option>
             </select>
             <select>
                 <option>Yangon</option>
             </select>
 
-            <button class="search-btn">
+            <button class="search-btn" id="searchBtn">
                 🔍 Search Now
             </button>
         </div>
@@ -61,53 +62,53 @@
 
     <div class="listing">
         <div class="listing-img">
-            <img src="https://www.zillowstatic.com/bedrock/app/uploads/sites/26/nyc-apartments-under-2k-park-slope-22b7bf.jpg" alt="">
+            <img src="images/listing/spacious/room1.png" alt="">
         </div>
 
         <div class="listing-info">
             <div class="listing-top">
-                <h3>1. Sunshine Apartment</h3>
+                <h3>1. Spacious 3-Bedroom Apartment</h3>
                 <span class="rating">☆ ☆ ☆ ☆ ☆ <small>(0) Reviews</small></span>
             </div>
 
             <p class="agent">by: <span>Sale Agent</span></p>
 
-            <p class="price">$100 / month without taxes</p>
-            <p class="details">Details: 3660 sq ft</p>
+            <p class="price">$850 / month with taxes</p>
+            <p class="details">Details: 1650 sq ft</p>
 
             <ul class="features">
-                <li>🛏 5 Bedrooms</li>
-                <li>🛁 3 Bathrooms</li>
+                <li>🛏 3 Bedrooms</li>
+                <li>🛁 2 Bathrooms</li>
             </ul>
 
             <button class="contact-btn" href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">Contact Now</button>
-            <a href="listing-details.html" class="btn-view">View Details</a>
+            <a href="listings/spacious.html" class="btn-view">View Details</a>
         </div>
     </div>
 
     <div class="listing">
         <div class="listing-img">
-            <img src="https://sgrenting.com/storage/properties/879/cheap-apartment-for-rent-in-phu-my-hung-district-7-hung-vuong-2-building-0.jpeg" alt="">
+            <img src="images/listing/diamond/bed.png" alt="">
         </div>
 
         <div class="listing-info">
             <div class="listing-top">
-                <h3>2. Cheap apartment for rent Hung Vuong 2 flat</h3>
+                <h3>2. Diamond Hill Condo</h3>
                 <span class="rating">☆ ☆ ☆ ☆ ☆ <small>(0) Reviews</small></span>
             </div>
 
             <p class="agent">by: <span>Sale Agent</span></p>
 
-            <p class="price">$50 / month with taxes</p>
-            <p class="details">Details: 1750 sq ft</p>
+            <p class="price">$1500 / month with taxes</p>
+            <p class="details">Details: 2100 sq ft</p>
 
             <ul class="features">
-                <li>🛏 6 Bedrooms</li>
+                <li>🛏 4 Bedrooms</li>
                 <li>🛁 4 Bathrooms</li>
             </ul>
 
             <button class="contact-btn" href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">Contact Now</button>
-            <a href="listing-details.html" class="btn-view">View Details</a>
+            <a href="listings/diamondhill.html" class="btn-view">View Details</a>
         </div>
     </div>
 </section>
@@ -161,5 +162,7 @@
 
 <script src="contact.js"></script>
 
+
+<script src="direct.js"></script>
 </body> 
 </html>
