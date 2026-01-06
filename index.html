@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotlist</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contactbtn.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-left">
+        <span class="logo-icon">📄</span>
+        <span class="logo-text">Plotlist</span>
+    </div>
+
+    <nav class="nav-center">
+        <a href="index.html">Home</a>
+        <a href="policy.html">Policy</a>
+        <a href="listing.html">Listing</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="nav-right">
+        <button class="add-btn" href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">+ Add Your Listing</button>
+    </div>
+</header>
+
+<section class="centercat">
+    <div class="overlay"></div>
+
+    <div class="center-content">
+        <h3>3+ Active Lising</h3>
+        <h1>Find Nearby Places & Things</h1>
+
+        <div class="search-bar">
+            <select>
+                <option>$50-$100</option>
+                <option>$100-$150</option>
+                <option>$150-$200</option>
+                <option>$250-$300</option>
+            </select>
+            <select>
+                <option>Yangon</option>
+            </select>
+
+            <button class="search-btn">
+                🔍 Search Now
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="recent-listing">
+    <div class="section-header">
+        <h2>Recent Listing</h2>
+        <p>CHECK THEM OUT</p>
+    </div>
+
+    <div class="listing">
+        <div class="listing-img">
+            <img src="https://www.zillowstatic.com/bedrock/app/uploads/sites/26/nyc-apartments-under-2k-park-slope-22b7bf.jpg" alt="">
+        </div>
+
+        <div class="listing-info">
+            <div class="listing-top">
+                <h3>1. Sunshine Apartment</h3>
+                <span class="rating">☆ ☆ ☆ ☆ ☆ <small>(0) Reviews</small></span>
+            </div>
+
+            <p class="agent">by: <span>Sale Agent</span></p>
+
+            <p class="price">$100 / month without taxes</p>
+            <p class="details">Details: 3660 sq ft</p>
+
+            <ul class="features">
+                <li>🛏 5 Bedrooms</li>
+                <li>🛁 3 Bathrooms</li>
+            </ul>
+
+            <button class="contact-btn" href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">Contact Now</button>
+            <a href="listing-details.html" class="btn-view">View Details</a>
+        </div>
+    </div>
+
+    <div class="listing">
+        <div class="listing-img">
+            <img src="https://sgrenting.com/storage/properties/879/cheap-apartment-for-rent-in-phu-my-hung-district-7-hung-vuong-2-building-0.jpeg" alt="">
+        </div>
+
+        <div class="listing-info">
+            <div class="listing-top">
+                <h3>2. Cheap apartment for rent Hung Vuong 2 flat</h3>
+                <span class="rating">☆ ☆ ☆ ☆ ☆ <small>(0) Reviews</small></span>
+            </div>
+
+            <p class="agent">by: <span>Sale Agent</span></p>
+
+            <p class="price">$50 / month with taxes</p>
+            <p class="details">Details: 1750 sq ft</p>
+
+            <ul class="features">
+                <li>🛏 6 Bedrooms</li>
+                <li>🛁 4 Bathrooms</li>
+            </ul>
+
+            <button class="contact-btn" href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">Contact Now</button>
+            <a href="listing-details.html" class="btn-view">View Details</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+
+        <div class="footer-left">
+            <h3 class="footer-title">Plotlist</h3>
+            <p class="footer-desc">
+                Plotlist is a fictional platform for discovering properties,
+                listings, and modern living spaces.
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <ul>
+                <li>+95 9420188199</li>
+                <li>+95 9799993239</li>
+                <li>+95 95501107</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Plotlist. All rights reserved.
+    </div>
+</footer>
+
+<div class="contact-modal" id="contactModal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeContactModal()">×</button>
+
+        <h3 class="modal-title">
+            Phone No. To Contact <strong>Plotlist Agency</strong>
+        </h3>
+
+        <div class="phone-list">
+            <p>📞 09420188199</p>
+            <p>📞 09799993239</p>
+            <p>📞 095501107</p>
+        </div>
+
+        <div class="modal-info">
+            Please mention that you found this advertisement on
+            <strong>Plotlist</strong>.
+        </div>
+    </div>
+</div>
+
+<script src="contact.js"></script>
+
+</body> 
+</html>

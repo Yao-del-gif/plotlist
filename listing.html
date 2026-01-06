@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listings</title>
+
+    <link rel="stylesheet" href="listing.css">
+
+    <link rel="stylesheet" href="contactbtn.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-left">
+        <span class="logo-icon">📄</span>
+        <span class="logo-text">Plotlist</span>
+    </div>
+
+    <nav class="nav-center">
+        <a href="index.html">Home</a>
+        <a href="policy.html">Policy</a>
+        <a href="listing.html">Listing</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="nav-right">
+        <button class="add-btn" href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">+ Add Your Listing</button>
+    </div>
+</header>
+
+
+<section class="page-header">
+    <h1>Check Out Our Listings</h1>
+</section>
+
+<section class="listing-layout">
+
+<aside class="filter-box">
+
+    <div class="filter-group">
+        <h4>Price Range</h4>
+        <ul>
+            <li><button>$50 – $100</button></li>
+            <li><button>$100 – $150</button></li>
+            <li><button>$150 – $200</button></li>
+            <li><button>$250 – $300</button></li>
+        </ul>
+    </div>
+
+<div class="filter-group">
+    <h4>Region</h4>
+
+    <div class="checkbox-dropdown">
+        <label class="parent-check">
+            <input type="checkbox" id="yangon-region" checked>
+            Yangon
+        </label>
+
+        <div class="checkbox-children">
+            <label>
+                <input type="checkbox" name="yangon-area">
+                North Yangon
+            </label>
+            <label>
+                <input type="checkbox" name="yangon-area">
+                South Yangon
+            </label>
+            <label>
+                <input type="checkbox" name="yangon-area">
+                East Yangon
+            </label>
+            <label>
+                <input type="checkbox" name="yangon-area">
+                West Yangon
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="filter-group">
+    <h4>Township</h4>
+
+    <label class="single-check">
+        <input type="checkbox" id="myit-township" checked>
+        Mayangone
+    </label>
+</div>
+
+    <div class="filter-group">
+        <h4>Type</h4>
+        <ul class="type-list">
+            <li><label><input type="checkbox"> Apartment</label></li>
+            <li><label><input type="checkbox"> Mini Condo</label></li>
+            <li><label><input type="checkbox"> Condo</label></li>
+        </ul>
+    </div>
+
+</aside>
+
+
+<section class="listing-page">
+
+
+<section class="listing-title">
+    <h2>Properties for Sale in Yangon</h2>
+</section>
+
+    <article class="listing-row">
+        <div class="listing-image">
+            <img src="https://www.zillowstatic.com/bedrock/app/uploads/sites/26/nyc-apartments-under-2k-park-slope-22b7bf.jpg" alt="Apartment">
+            <div class="img-overlay"><a href="">Learn More</a></div>
+        </div>
+
+        <div class="listing-details">
+            <h3>Sunshine Paradise Apartment</h3>
+            <p class="agent">by: Real Estate Agent</p>
+            <p class="price">$600 / month included tax</p>
+            <p class="size">860 sq ft</p>
+
+            <ul class="features">
+                <li>2 Bedrooms</li>
+                <li>3 Bathrooms</li>
+            </ul>
+
+        <div class="listing-actions">
+            <a href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">
+                Contact Now
+            </a>
+            <a href="listing-details.html" class="btn-view">View Details</a>
+        </div>
+
+        </div>
+    </article>
+
+    <article class="listing-row">
+        <div class="listing-image">
+            <img src="https://sgrenting.com/storage/properties/879/cheap-apartment-for-rent-in-phu-my-hung-district-7-hung-vuong-2-building-0.jpeg" alt="Apartment">
+            <div class="img-overlay"><a href="">Learn More</a></div>
+        </div>
+
+        <div class="listing-details">
+            <h3>Best One in This Category</h3>
+            <p class="agent">by: Real Estate Agent</p>
+
+            <p class="price">$800 / month included tax</p>
+            <p class="size">860 sq ft</p>
+
+            <ul class="features">
+                <li>2 Bedrooms</li>
+                <li>3 Bathrooms</li>
+            </ul>
+
+        <div class="listing-actions">
+            <a href="javascript:void(0)" class="btn-contact" onclick="openContactModal()">
+                Contact Now
+            </a>
+            <a href="listing-details.html" class="btn-view">View Details</a>
+        </div>
+
+        </div>
+    </article>
+
+</section>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+
+        <div class="footer-left">
+            <h3 class="footer-title">Plotlist</h3>
+            <p class="footer-desc">
+                Plotlist is a fictional platform for discovering properties,
+                listings, and modern living spaces.
+            </p>
+        </div>
+
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <ul>
+                <li>+95 9420188199</li>
+                <li>+95 9799993239</li>
+                <li>+95 95501107</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Plotlist. All rights reserved.
+    </div>
+</footer>
+
+<div class="contact-modal" id="contactModal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeContactModal()">×</button>
+
+        <h3 class="modal-title">
+            Phone No. To Contact <strong>Plotlist Agency</strong>
+        </h3>
+
+        <div class="phone-list">
+            <p>📞 09420188199</p>
+            <p>📞 09799993239</p>
+            <p>📞 095501107</p>
+        </div>
+
+        <div class="modal-info">
+            Please mention that you found this advertisement on
+            <strong>Plotlist</strong>.
+        </div>
+    </div>
+</div>
+
+<script src="contact.js"></script>
+
+</body>
+</html>
